@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_details_general_descriptions",
+  "info": {
+    "displayName": "General description",
+    "icon": "book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "def": {
+      "type": "text",
+      "required": true
+    },
+    "desc": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

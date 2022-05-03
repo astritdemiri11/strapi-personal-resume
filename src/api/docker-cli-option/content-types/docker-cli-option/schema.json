@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "docker_cli_options",
+  "info": {
+    "singularName": "docker-cli-option",
+    "pluralName": "docker-cli-options",
+    "displayName": "Docker CLI option"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "data_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::data-type.data-type"
+    }
+  }
+}

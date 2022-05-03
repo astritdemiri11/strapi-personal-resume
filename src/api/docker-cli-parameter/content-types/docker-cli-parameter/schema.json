@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "docker_cli_parameters",
+  "info": {
+    "singularName": "docker-cli-parameter",
+    "pluralName": "docker-cli-parameters",
+    "displayName": "Docker CLI parameter"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "data_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::data-type.data-type"
+    }
+  }
+}

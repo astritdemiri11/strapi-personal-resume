@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_docker_options",
+  "info": {
+    "displayName": "Option",
+    "icon": "list"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::docker-cli-option.docker-cli-option"
+    },
+    "info": {
+      "type": "component",
+      "repeatable": false,
+      "component": "details.general-description",
+      "required": true
+    }
+  }
+}

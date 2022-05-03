@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "docker_cli_commands",
+  "info": {
+    "singularName": "docker-cli-command",
+    "pluralName": "docker-cli-commands",
+    "displayName": "Docker CLI command",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "info": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "details.general-description",
+      "required": true
+    },
+    "order": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "integer",
+      "required": true
+    },
+    "copy": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::docker-cli-command.docker-cli-command"
+    },
+    "parent": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::docker-cli-command.docker-cli-command"
+    },
+    "params": {
+      "displayName": "Parameter",
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "component": "docker.parameter"
+    },
+    "options": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "docker.option"
+    }
+  }
+}
