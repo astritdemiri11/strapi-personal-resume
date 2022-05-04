@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_details_def_s",
+  "info": {
+    "displayName": "Def.",
+    "icon": "indent"
+  },
+  "options": {},
+  "attributes": {
+    "def": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

@@ -43,7 +43,7 @@
           "localized": false
         }
       },
-      "type": "integer",
+      "type": "decimal",
       "required": true
     },
     "copy": {

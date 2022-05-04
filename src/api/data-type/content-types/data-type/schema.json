@@ -34,7 +34,7 @@
           "localized": true
         }
       },
-      "component": "details.general-description",
+      "component": "details.def",
       "required": true
     },
     "order": {
@@ -43,8 +43,9 @@
           "localized": false
         }
       },
-      "type": "integer",
-      "required": true
+      "type": "decimal",
+      "required": true,
+      "default": 0
     },
     "parent": {
       "type": "relation",
