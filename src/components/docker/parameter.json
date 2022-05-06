@@ -20,6 +20,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::docker-cli-parameter.docker-cli-parameter"
+    },
+    "parameter_name": {
+      "type": "string",
+      "required": true,
+      "private": true
     }
   }
 }
