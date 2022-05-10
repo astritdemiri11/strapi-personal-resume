@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "photo_editing_types",
+  "info": {
+    "singularName": "photo-editing-type",
+    "pluralName": "photo-editing-types",
+    "displayName": "Photo editing type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "info": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "details.def",
+      "required": true
+    }
+  }
+}
